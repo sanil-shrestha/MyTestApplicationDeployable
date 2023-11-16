@@ -31,4 +31,4 @@ jobs:
       with:
         arguments: build
     - name: Execute Jar File
-      run: sudo kill -p `sudo lsof -t -i:80` & sudo java -jar /home/ubuntu/actions-runner/_work/MyTestApplicationDeployable/MyTestApplicationDeployable/target/MyDeployableApplication-0.0.1-SNAPSHOT.jar &
+      run: sudo kill -p `sudo lsof -t -i:80` & sudo java -jar /home/ubuntu/actions-runner/_work/MyTestApplicationDeployable/MyTestApplicationDeployable/build/libs/MyDeployableApplication-0.0.1-SNAPSHOT.jar &
